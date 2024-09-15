@@ -16,25 +16,42 @@
         </nav>
 
         <nav class="pags">
-            <a href="./index.html">Início</a>
+            <a href="../index.html">Início</a>
             <a href="../jogos/jogos.html">Jogos</a>
             <a href="../QUIZ/quiz.html">Quiz</a>
             <a href="../index.html">Contato</a>
         </nav>
     </header>
     <main>
-        <section class="carrossel-de-imagens" id="carrosel_container">
-            <div class="seta-esquerda" id="SD">
-                <img src="../../img/seta-esquerda.png" alt="Seta para a esquerda">
-            </div>
-            <div class="estrutura_container">
-               
-
-            </div>
-            <div class="seta-direita" id="SE">
-                <img src="../img/seta-direita.png" alt="Seta para a direita">
+        <section id="destaques" class="destaques">
+            <h2>Jogos em Destaque</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <a href="jogo1.html">
+                            <img src="../img/retangulo-carrossel.jpg" alt="Jogo 1">
+                            <h3>Jogo 1</h3>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="jogo2.html">
+                            <img src="img/jogo2.jpg" alt="Jogo 2">
+                            <h3>Jogo 2</h3>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="jogo3.html">
+                            <img src="img/jogo3.jpg" alt="Jogo 3">
+                            <h3>Jogo 3</h3>
+                        </a>
+                    </div>
+                    <!-- Adicione mais jogos conforme necessário -->
+                </div>
+                <button class="carousel-prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="carousel-next" onclick="moveCarousel(1)">&#10095;</button>
             </div>
         </section>
+        
     </main>
 
     <script src="./carrosel.js" defer></script>

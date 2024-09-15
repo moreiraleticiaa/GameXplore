@@ -1,0 +1,138 @@
+* {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background: #f5f5f5;
+        background-attachment: fixed;
+    }
+
+        
+    html{
+        scroll-behavior: smooth;
+        scroll-padding-top: 5rem;
+    }
+
+    @font-face {
+        font-family: 'PP Telegraf';
+        src: url('./FONTES/PPTelegraf-Regular.woff2') format ('woff2'),
+            url('./FONTES/PPTelegraf-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'PP Telegraf';
+        src: url('./FONTES/PPTelegraf-UltraBold.woff2') format('woff2'),
+            url('./FONTES/PPTelegraf-UltraBold.woff') format('woff');
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Garet';
+        src: url('./FONTES/Garet-Book.woff2') format('woff2'),
+            url('./FONTES/Garet-Book.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Garet';
+        src: url('./FONTES/Garet-Heavy.woff2') format('woff2'),
+            url('./FONTES/Garet-Heavy.woff') format('woff');
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    header {
+       /* background: #333;*/
+        color: #fff;
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 10rem;
+        z-index: 1000;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+    nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+.destaques {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-item h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+}
