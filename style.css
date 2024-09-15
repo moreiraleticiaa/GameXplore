@@ -46,7 +46,6 @@
         font-style: normal;
     }
 
-
     header {
        /* background: #333;*/
         color: #fff;
@@ -79,19 +78,36 @@
     }
 
     .intro {
-        /* background: ; */
+        /* background: ; */   
+        position: relative;      
         font-size: 20px;
         color: #faecec;
         text-align: center;
         /*padding: 100px 20px 60px;*/
         /*border: 2px solid black;*/
+        /*display: flex;*/
+        justify-content: center;
         margin-top: 15rem;
+        /*height: 100vh;*/
     }
+
+    /*.intro-background {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        height: 350px;
+        /*background: rgba (0, 0, 0, 0.5);*/
+        /*z-index: 0;
+        border-radius: 10px;
+    }*/
 
     .intro-content {
         max-width: 800px;
         margin: auto;
         margin-top: -28em;
+        z-index: 1;
     }
 
     intro h2 {
@@ -113,11 +129,11 @@
         border-radius: 7px;
         font-weight: bold;
         margin-top: -0rem;
-
+        cursor: pointer;
     }
 
     .btn:hover {
-        background: #013061;
+        background: #22215a;
     }
 
 }
