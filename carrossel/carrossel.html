@@ -1,60 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./carrossel.css">
     <title>GameXplore</title>
-
+    <link rel="stylesheet" href="carrossel.css">
 </head>
-
 <body>
-    <img src="../img/fundo2.png" alt="imagem de fundo carrossel">
+    <img src="../img/fundo.png.png" alt="imagem de fundo">
     <header>
-        <nav>
+        <div class="header-content">
             <h1>GameXplore</h1>
-        </nav>
+            <nav>
+                <a href="index.html">Início</a>                      
+                <a href="carrossel/carrossel.html"></a>
+                <a href="quiz.html">Quiz</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
 
-        <nav class="pags">
-            <a href="../index.html">Início</a>
-            <a href="../jogos/jogos.html">Jogos</a>
-            <a href="../QUIZ/quiz.html">Quiz</a>
-            <a href="../index.html">Contato</a>
-        </nav>
+        <h2>Jogos em Destaque</h2>
+        <div class="carousel">
+            <!-- Aqui você pode adicionar um carrossel de imagens ou usar uma biblioteca de carrossel JavaScript -->
+            <img src="../img/Group 52 (2).png" alt="Jogo 1">
+            <img src="../img/retangulo-carrossel.jpg" alt="Jogo 2">
+            <img src="../img/retangulo-carrossel.jpg" alt="Jogo 3">
+        </div>
+
     </header>
-    <main>
-        <section id="destaques" class="destaques">
-            <h2>Jogos em Destaque</h2>
-            <div class="carousel-container">
-                <div class="carousel">
-                    <div class="carousel-item">
-                        <a href="jogo1.html">
-                            <img src="../img/Group 52 (2).png" alt="Jogo 1 snake game">
-                            <h3>Jogo 1</h3>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="jogo2.html">
-                            <img src="img/jogo2.jpg" alt="Jogo 2">
-                            <h3>Jogo 2</h3>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="jogo3.html">
-                            <img src="img/jogo3.jpg" alt="Jogo 3">
-                            <h3>Jogo 3</h3>
-                        </a>
-                    </div>
-                    <!-- Adicione mais jogos conforme necessário -->
-                </div>
-                <button class="carousel-prev" onclick="moveCarousel(-1)">&#10094;</button>
-                <button class="carousel-next" onclick="moveCarousel(1)">&#10095;</button>
-            </div>
-        </section>
-        
-    </main>
-
-    <script src="./carrosel.js" defer></script>
-</body>
-
-</html>
+ 
