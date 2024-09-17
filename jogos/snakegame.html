@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Snake game</title>
+    <link rel="stylesheet" href="snakegame.css">
+</head>
+
+<body>
+    <div id="gameContainer">
+        <h1>Snake Game</h1>
+
+        <div id="difficultySelector">
+            <p>Escolha o nível de dificuldade:</p>
+            <button id="easy">Fácil</button>
+            <button id="medium">Médio</button>
+            <button id="hard">Difícil</button>
+        </div>
+
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <div id="progressContainer">
+            <p>Pogresso:</p>
+            <progress id="progressBar" max="100" value="0"></progress>
+        </div>
+
+        <div id="controls">
+            <button id="startBtn">Iniciar</button>
+            <button id="pauseBtn">Pausar</button>
+            <button id="resetBtn">Reiniciar</button>
+            <button id="increaseSpeed">Aumentar Velocidade</button>
+            <button id="decreaseSpeed">Diminuir Velocidade</button>
+        </div>
+
+        <p>Pontuação: <span id="score">0</span></p>
+
+    <div id="instructions">
+        <h3>Instruções:</h3>
+        <p>Use as setas do teclado para controlar a direção da cobra.</p>
+        <p>Evite bater nas paredes ou consigo mesmo.</p>
+        <p> Colete a comida para ganhar pontos!</p>
+    </div>
+
+        <div id="feedback" class="hidden">
+            <p id="feedbackText"></p>
+            <button id="playAgainBtn">Jogar Novamente</button>
+        </div>
+
+        <div id="specialItemInfo" class="hidden">
+            <p id="specialItemText"></p>
+        </div>
+    </div>
+
+    <script src="snakegame.js"></script>
+</body>
+
+</html>

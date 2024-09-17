@@ -1,0 +1,231 @@
+* {
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #cfe6fb;
+     }
+  
+   #gameContainer {
+      text-align: center;
+      max-width: 100%;
+      padding: 10px;
+     }
+  
+   h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      font-family: 'Lobster', cursive;
+      color: #2e8b57;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      max-width: 100%;
+      white-space: normal;
+      word-wrap: break-word;
+      padding: 0 20px;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+  
+   h1:hover {
+      color: #14f38b;
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+   }
+  
+   canvas {
+      border: 2px solid #000;
+      display: block;
+      margin: auto;
+      background-color: #faf0e6;
+    } 
+   
+  #controls {
+     margin-top: 10px;
+    }
+  
+  #difficultySelector {
+     margin-bottom: 10px;
+   } 
+  
+  #themeSelect {
+     margin-bottom: 10px;
+   }
+  
+  #difficultySelector button, #themeSelect button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    white-space: normal;
+    word-wrap: break-word;
+    transition: background-color 0.3s text-shadow 0.3s;
+  }
+  
+  #difficultySelector button:hover {
+    color: #ffffff;
+    text-shadow: 4px 4px 8px rgba(255, 135, 135, 0.2);
+  }
+  
+  #progressContainer {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  #progressBar {
+    width: 100%;
+    height: 20px;
+    background-color: #e3a9a9;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #progressBar::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.3;
+  }
+  
+  /*#instructions {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #483d8b;
+    padding: 10px;
+    border: 1px solid #483d8b;
+    border-radius: 5px;
+  }
+  
+  #achievements {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  #achievements h3 {
+    margin-bottom: 5px;
+  }
+  
+  #achievements ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1rem;
+  }*/
+  
+  button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      background-color: #4682b4;
+      color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+  
+  button:hover {
+      background-color: #163eb5;
+    }
+  
+  #score {
+    font-size: 2rem;
+    color: #ff4500;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #ff4500;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  #scorre-label {
+    font-size: 1.2rem;
+    color: #483d8b;
+    font-weight: bold;
+    margin-right: 10p;
+  }
+  
+  #feedback {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+  #feedback.hidden {
+        display: none; 
+    } 
+  
+  #feedbackText {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #8b0000;
+      font-weight: bold;
+    }
+  
+  #playAgainBtn {
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #32cd32;
+      color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3;
+    }
+  
+    #playAgainBtn:hover {
+      background-color: #2cc52c;
+    }
+  
+    #specialItemInfo {
+      display: none;
+      margin-top: 20px;
+      text-align: center;
+   }
+  
+    #specialItemText {
+      font-size: 1.2rem;
+      color: #ff4500;
+      font-weight: bold;
+    }
+  
+  .snake-segment {
+      transition: all 0.3s;
+    }
+  
+    #score {
+      font-size: 2rem;
+      color: #ff4500;
+      font-weight: bold;
+      padding: 10px;
+      border: 2px solid #ff4500;
+      border-radius: 5px;
+      background-color: #e0d0d0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      margin-top: 10px;
+      transition: color 0.3s, box-shadow 0.3s;
+    }
+  
+   #score:hover {
+      color: #ff6347;
+      box-shadow: 0 4px 8px rgba(0, 0 , 0, 0.2);
+   }
+  
+   #score-label {
+      font-size: 1.2rem;
+      color: #483d8b;
+      font-weight: bold;
+      margin-right: 10px;
+   }
+  }
